@@ -11,7 +11,7 @@ class SamplePipeline(bspump.Pipeline):
 			super().__init__(app, pipeline_id)
 
 			self.Svc = app.get_service("bspump.PumpService")
-			#app.PubSub.subscribe("Application.tick!", example)
+			app.PubSub.subscribe("Application.tick!", example)
 			self.MyInternalSource = self.Svc.locate("SamplePipeline2.*InternalSource")
 			print(self.MyInternalSource)
 

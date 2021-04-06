@@ -26,4 +26,4 @@ class SampleApp(bspump.BSPumpApplication):
 		self.Svc.add_pipeline(SamplePipeline2(self, "SamplePipeline2"))
 
 
-		self.PubSub.publish("go!")
+		self.PubSub.publish("neco!")
